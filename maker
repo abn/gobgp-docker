@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+make BINARY=gobgpd $@ \
+    && make BINARY=gobgp $@

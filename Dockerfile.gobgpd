@@ -1,0 +1,8 @@
+FROM tianon/true
+MAINTAINER Arun Neelicattu <arun.neelicattu@gmail.com>
+
+COPY ./rootfs /
+
+EXPOSE 179/tcp 
+
+ENTRYPOINT ["/usr/bin/gobgpd"]

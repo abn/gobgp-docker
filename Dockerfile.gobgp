@@ -1,0 +1,6 @@
+FROM tianon/true
+MAINTAINER Arun Neelicattu <arun.neelicattu@gmail.com>
+
+COPY ./rootfs /
+
+ENTRYPOINT ["/usr/bin/gobgp"]
